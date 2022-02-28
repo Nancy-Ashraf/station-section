@@ -1,0 +1,164 @@
+/* ---------------------2-Gneral CSS style--------------------------- */
+
+*{
+    margin:0;   
+    padding:0;
+    box-sizing: border-box;   /* css3>> 34an my5ale4 al border aw al padding yzawedo alwidth bta3 al 3onsor w ya5od mn al width ally mawgod*/
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.container{
+    width:80%;
+    /* background-color:bisque; */
+    /* background-color:grey; */
+    margin:auto;  /*34an ywastan al div fe nos al bage*/
+}
+
+.clear{
+    clear:both;     /*to solve float problem*/
+}
+.overlay{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.7);
+}
+.hover-opacity{
+    transition : opacity 0.8s;
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+
+.ltr-effect{
+    position:relative;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: montserrat,sans-serif;
+}
+button{
+    font-family: inherit;   /*ya3ny ya5od al font family bta3t kol al mawk3*/
+}
+
+.section-header{
+    text-align: center;
+}
+.section-header .section-title{
+    font-size:35px;
+    text-transform: capitalize;
+}
+.section-header .section-title::after{
+    content:" ";
+    width:40px;
+    height: 3px;
+    background-color: #6195ff;
+    display:block;
+    margin:10px auto 70px auto ;
+    
+    
+}
+
+.pd-y{
+    padding: 120px 0;
+    overflow: auto;
+}
+
+a{text-decoration: none;}
+
+.mg{margin:0 5%;}
+
+/* ---------------------3.3-Portofolio--------------------- */
+.portofolio{
+    background-color: #f9f9f9;
+}
+.portofolio-item {
+    margin-bottom: 5%; 
+    /* position: relative; */
+    padding:15px;
+}
+
+/* .portofolio-item img{ */
+    /* width:100%;  */
+/* } */
+.container{
+    position: relative;
+}
+
+.layer-content{
+    background-color: rgba(0,0,0,0.5);
+    /* opacity:0;
+    visibility: hidden;
+    transition: opacity 0.5s; */
+}
+/* .container:hover .layer-content{ */
+    /* opacity:1; */
+    /* visibility: visible; */
+/* } */
+.layer-info{
+    width: 80%;
+    text-align: center;
+    line-height: 1.5;
+}
+.layer-content-title{
+    font-size: 20px;
+    color:white;
+    margin-bottom: 5px;
+    transition:top 0.5s;
+    transition-delay: 0.3s;
+}
+.layer-content .category{
+    color:#6195ff;
+    text-transform: uppercase;
+    transition:top 0.5s;
+    transition-delay: 0s;
+}
+.layer-info a i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #6195ff; 
+    line-height: 40px; /*34an 2wastn al 3onsor beltol*/
+    color: white;
+}
+.layer-info a{
+    transition:top 0.5s;
+    transition-delay: 0.5s;
+}
+.layer-info a,
+.layer-content .category,
+.layer-content-title{
+    position:relative;
+    top:10px;
+    opacity:0;
+}
+
+/* .container:hover .layer-info a ,
+.container:hover .layer-content .category,
+.container:hover .layer-content-title{
+    top:0px;
+    opacity:1;
+} */
+
+.portofolio-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.portofolio-item > * + * {
+    margin-top: 10px;
+}
+
+.portofolio-item  .train-id{
+    
+    border: 1px solid #e8e8e8;
+    position: relative;
+    padding:15px;
+    margin-bottom: 10px;
+}
